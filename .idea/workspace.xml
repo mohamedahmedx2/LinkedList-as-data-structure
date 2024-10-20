@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fbfa0f6d-d279-4a7b-8e9b-5c15762e151c" name="Changes" comment="Functions have been added to insert an element before another element, insert an element at the end of the list, or delete a specific element.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="fbfa0f6d-d279-4a7b-8e9b-5c15762e151c" name="Changes" comment="Functions have been added to insert an element before another element, insert an element at the end of the list, or delete a specific element." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -102,11 +100,20 @@
       <option name="project" value="LOCAL" />
       <updated>1729448105462</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Functions have been added to insert an element before another element, insert an element at the end of the list, or delete a specific element.">
+      <option name="closed" value="true" />
+      <created>1729448296888</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1729448296888</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Functions have been added to insert the penultimate item, insert an item at the end of the list, or delete a specific item." />
-    <option name="LAST_COMMIT_MESSAGE" value="Functions have been added to insert the penultimate item, insert an item at the end of the list, or delete a specific item." />
+    <MESSAGE value="Functions have been added to insert an element before another element, insert an element at the end of the list, or delete a specific element." />
+    <option name="LAST_COMMIT_MESSAGE" value="Functions have been added to insert an element before another element, insert an element at the end of the list, or delete a specific element." />
   </component>
 </project>
