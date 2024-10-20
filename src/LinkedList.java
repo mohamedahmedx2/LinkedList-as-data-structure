@@ -70,4 +70,66 @@ public class LinkedList {
         }
         return found;
     }
+
+
+    void insertBefore(int item, int newValue) {
+        if (isEmpty())
+
+            insertFirst(newValue);
+
+        if (isFound(item)) {
+            Node newNode = new Node();
+            newNode.data = newValue;
+            Node temp = head;// بخليه يساوي ال head عشان يبدأ من الاول
+
+            while (temp != null && temp.data != item) {
+                temp = temp.next;
+            }
+            newNode.next = temp.next;
+            temp.next = newNode;
+        } else
+            System.out.println("error!! the item not found");
+
+
+    }
+
+
+    void append(int newValue) {
+        if (isEmpty()) {
+            insertFirst(newValue);
+
+        } else {
+            Node temp = head;
+            while (temp.next != null) {
+                temp = temp.next;
+            }
+            Node newNode = new Node();
+            newNode.data = newValue;
+            temp.next = newNode;
+            newNode.next = null;
+        }
+    }
+
+
+    void delete(int item) {
+        Node delTemp = head;
+        if (isEmpty()) {
+            System.out.println("list is empty,no items to delete");
+        } else if (head.data == item) {
+            Node FirstDelTemp = head;
+            head = head.next;
+        } else if (item != head.data) {
+            System.out.println("error!! not found the items for delete\n");
+        } else {
+            delTemp = head;
+            Node preTemp = null;
+            while (delTemp.data != item) {
+                preTemp = delTemp;
+                delTemp = delTemp.next;
+            }
+            preTemp.next = delTemp.next;
+        }
+
+
+    }
 }

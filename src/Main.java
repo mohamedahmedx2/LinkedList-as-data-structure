@@ -14,29 +14,53 @@ public class Main {
             System.out.println("the list contains " + list.Count());
         }
 
-        for (int i = 1;i< 5;i++)
-        {
-            System.out.println("enter item to insert in the list " + i);
-            int item = scanner.nextInt();
-            list.insertFirst(item);
-        }
-        list.display();
-        System.out.println("the list contains " + list.Count());
-//        System.out.println("enter item to insert in the list");
-//        int item = scanner.nextInt();
-//        list.insertFirst(item);
-       // list.display();
-
-
-        System.out.println("enter item to search for");
+        System.out.println("enter item to insert in the list");
         int item = scanner.nextInt();
-        if (list.isFound(item))
-        {
-            System.out.println("item found");
-        }else
-        {
-            System.out.println("item not found");
-        }
+        list.insertFirst(item);
+
+        System.out.println("enter item to insert in the list");
+        int item2 = scanner.nextInt();
+        list.insertFirst(item2);
+
+
+        System.out.println("enter item to insert in the list");
+        int item3 = scanner.nextInt();
+        list.insertFirst(item3);
+        System.out.println("the list contains " + list.Count());
+
+
+
+
+
+
+//        System.out.println("enter item old");
+//        int itemOld = scanner.nextInt();
+//        System.out.println("enter the new value");
+//        int newValue = scanner.nextInt();
+//        list.insertBefore(itemOld,newValue);
+//        list.display();
+
+        System.out.println("enter the new value in last");
+        int nvLast = scanner.nextInt();
+        list.append(nvLast);
+
+
+        System.out.println("enter item to delete");
+        int delItem = scanner.nextInt();
+        list.delete(delItem);
+
+        System.out.println("final the items in LinkedList:");
+        list.display();
+
+//        System.out.println("enter item to search for");
+//        int itemSearch = scanner.nextInt();
+//        if (list.isFound(itemSearch))
+//        {
+//            System.out.println("item found");
+//        }else
+//        {
+//            System.out.println("item not found");
+//        }
 
     }
 }
